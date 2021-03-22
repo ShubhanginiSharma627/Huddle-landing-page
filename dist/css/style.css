@@ -1,0 +1,103 @@
+body {
+  background-color: #674baf;
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex .one #logo {
+  text-align: center;
+}
+
+.flex .one #mock {
+  padding: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.flex .two {
+  padding: 150px 90px;
+  color: white;
+  line-height: 2rem;
+}
+
+.flex .two h1 {
+  padding-right: 20px;
+  word-spacing: 0.1rem;
+  line-height: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.flex .two p {
+  -ms-grid-column-align: left;
+      justify-self: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.flex .two button {
+  background-color: white;
+  padding: 20px 60px;
+  border-radius: 50px;
+  border: none;
+  color: #674baf;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.flex .two button:hover {
+  background-color: #e882e8;
+  color: white;
+}
+
+.icons .fab {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  float: right;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.icons .fab:hover {
+  color: #e882e8;
+  border: 1px solid #e882e8;
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 0px;
+    background-image: url("images/bg-mobile.svg");
+  }
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex .two {
+    margin-left: 15%;
+    padding: 0px;
+    text-align: center;
+  }
+  .flex .two h1 {
+    padding-right: 0px;
+  }
+  .icons {
+    margin-left: 40%;
+    padding-top: 50px;
+  }
+  .icons .fab {
+    float: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
